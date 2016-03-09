@@ -13,7 +13,7 @@ public class DisplayDay {
         
         int length = 30 + ((month + (int)(month / 8.0)) % 2);
         if (month == 2){
-          if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 != 0))
+          if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
             length = 29;
           else
             length = 28;  
